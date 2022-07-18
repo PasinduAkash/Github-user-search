@@ -1,0 +1,192 @@
+/* box colors and Layout */
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(230, 17%, 14%);
+    color: white;
+
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 700px;
+    
+}
+
+.searchContainer {
+    width: 100%;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(228, 28%, 20%);
+    margin: 1em 0;
+    border-radius: 10px;
+    padding: 1em 0;
+    width: 100%;
+    height: 50px;
+}
+
+main {
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 10px;
+    padding: 2.5em;
+}
+
+.user-info {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+background-color: hsl(230, 17%, 14%);
+width: 95%;
+margin: 0 auto;
+border-radius: 10px;;
+}
+
+img {
+    border-radius: 50%;
+    width: 35%;
+    height: 25%;
+    max-height: 170px;
+    max-width: 170px;
+    padding-left: 1em;
+    
+}
+
+
+.username-box {
+width: 60%;
+margin-left: 1.5em;
+}
+
+.basic-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-info {
+    margin: 2em 0 1em;
+}
+
+.location {
+grid-area: location;
+padding: 0 2em;
+font-size: 0.75em;
+}
+
+.twitter {
+grid-area: twitter; 
+padding: 0 2em;
+font-size: 0.75em;
+}
+
+.link {
+grid-area: link;
+padding: 0 2em;
+font-size: 0.75em;
+}
+
+.website {
+grid-area: website;
+padding: 0 2em;
+font-size: 0.75em;
+}
+
+/* typography */
+
+.info-recieved {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    height: 50px;
+}
+
+input {
+    border: none;
+    outline-width: 0;
+   background-color:hsl(228, 28%, 20%);
+   color: white;
+  flex: 1;
+}
+
+.mag-glass {
+    padding: 1em 1em;
+   
+}
+
+.username-basic {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.date-joined {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.username {
+    color: aqua;
+    margin: 0;
+}
+
+.bio {
+    margin: 2em 0;
+    padding-left: 1em;
+}
+
+.info-box {
+    width: 25%;
+}
+
+.info-box > p {
+    font-size: small;
+}
+
+@media (min-width: 830px) {
+    .social-info {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:
+        "location twitter"
+        "link website" ;
+        grid-gap: 1rem;
+
+    }
+
+    .basic-content {
+       text-align: left;
+       margin-right: 2em;
+    }
+
+    img {
+        margin-left: 1em;
+        padding-left: 0;
+    }
+
+    .username-box {
+        max-width: 300px;
+        flex: 1;
+    }
+}
+
