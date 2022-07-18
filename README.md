@@ -13,7 +13,7 @@ Different ways to use react useEffect hook.
 How to productively use Javascript Promises. (async/await)
 Browser CORS Policy. (Assigning headers)
 Difference between urlencoded, json as Content-type.
-Got more familiar with working REST API.
+Got more familiar with working with REST API.
 
 
 
